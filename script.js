@@ -1,12 +1,13 @@
 let num1 = document.querySelector("#number-1");
 let root = document.documentElement;
 let counter = 0;
+let intervalId;
 
 const x = function (numOfCircle, num, timeForLoad) {
  root.style.setProperty("--change", numOfCircle);
  setInterval(() => {
   if (counter == num) {
-   clearInterval();
+   clearInterval(intervalId);
   } else {
    counter = counter + 1;
    num1.innerHTML = counter + "%";
@@ -14,6 +15,6 @@ const x = function (numOfCircle, num, timeForLoad) {
  }, timeForLoad);
 };
 
-// x(218, 50, 40);
+x(218, 50, 40);
 // x(109, 75, 27);
-x(0, 100, 20);
+// x(0, 100, 30);

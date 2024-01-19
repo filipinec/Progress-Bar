@@ -45,7 +45,7 @@ body {
   0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
-circle {
+.html-block circle {
  fill: none;
  stroke: url(#GradientColor);
  stroke-width: 20px;
@@ -53,7 +53,7 @@ circle {
  stroke-dashoffset: 436;
  animation: anim 2s linear forwards;
 }
-svg {
+.html-block svg {
  position: absolute;
  top: 0;
  left: 0;
