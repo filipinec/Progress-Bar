@@ -1,24 +1,19 @@
-let num = document.querySelector("#number");
+let num1 = document.querySelector("#number-1");
+let root = document.documentElement;
 let counter = 0;
 
-setInterval(() => {
- if (counter == 65) {
-  clearInterval();
- } else {
-  counter = counter + 1;
-  num.innerHTML = counter + "%";
- }
-}, 30);
+const x = function (numOfCircle, num, timeForLoad) {
+ root.style.setProperty("--change", numOfCircle);
+ setInterval(() => {
+  if (counter == num) {
+   clearInterval();
+  } else {
+   counter = counter + 1;
+   num1.innerHTML = counter + "%";
+  }
+ }, timeForLoad);
+};
 
-// const x = function (setNum) {
-//  setInterval(() => {
-//   if (counter == setNum) {
-//    clearInterval();
-//   } else {
-//    counter = counter + 1;
-//    num.innerHTML = counter + "%";
-//    //  num.style.setProperty("--my-variable", 218);
-//   }
-//  }, 30);
-// };
-// x(65);
+x(218, 50, 30);
+// x(109, 75, 30);
+// x(0, 100, 30);

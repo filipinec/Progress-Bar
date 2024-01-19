@@ -1,5 +1,5 @@
 :root {
- --number: 0;
+ --change: 0;
 }
 * {
  margin: 0;
@@ -14,6 +14,8 @@ body {
  display: flex;
  align-items: center;
  justify-content: center;
+ font-weight: 600;
+ color: #555;
 }
 .skill {
  width: 160px;
@@ -42,10 +44,7 @@ body {
   -0.5px -0.5px 0px rgba(255, 255, 255, 0.1),
   0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
-#number {
- font-weight: 600;
- color: #555;
-}
+
 circle {
  fill: none;
  stroke: url(#GradientColor);
@@ -60,7 +59,10 @@ svg {
  left: 0;
 }
 @keyframes anim {
+ /* 0% {
+  stroke-dashoffset: 0;
+ } */
  100% {
-  stroke-dashoffset: 218;
+  stroke-dashoffset: var(--change);
  }
 }
