@@ -16,6 +16,7 @@ const x = function (setNum) {
   } else {
    counter = counter + 1;
    num.innerHTML = counter + "%";
+   
   }
  }, 30);
 };

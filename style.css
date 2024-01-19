@@ -5,6 +5,8 @@
  font-family: "Poppins", sans-serif;
 }
 
+:root {
+}
 body {
  background: #e3edf7;
  height: 100vh;
@@ -47,8 +49,8 @@ circle {
  fill: none;
  stroke: url(#GradientColor);
  stroke-width: 20px;
- stroke-dasharray: 472;
- stroke-dashoffset: 472;
+ stroke-dasharray: 436;
+ stroke-dashoffset: 436;
  animation: anim 2s linear forwards;
 }
 svg {
@@ -58,6 +60,6 @@ svg {
 }
 @keyframes anim {
  100% {
-  stroke-dashoffset: 165;
+  stroke-dashoffset: 218;
  }
 }
