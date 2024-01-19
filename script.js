@@ -14,6 +14,6 @@ const x = function (numOfCircle, num, timeForLoad) {
  }, timeForLoad);
 };
 
-x(218, 50, 30);
-// x(109, 75, 30);
-// x(0, 100, 30);
+// x(218, 50, 40);
+// x(109, 75, 27);
+x(0, 100, 20);
