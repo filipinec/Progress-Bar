@@ -1,5 +1,15 @@
+const data = {
+ html: 75,
+ css: 75,
+ javaScript: 50,
+ react: 10,
+};
+
+const x = function (percent) {};
+
 const progressBar = function (skillId, numOfCircle, num, timeForLoad) {
  let numElement = document.querySelector(`#${skillId} .inner`);
+ console.log(numElement);
  let root = document.documentElement;
  let counter = 0;
  let intervalId;
@@ -13,7 +23,6 @@ const progressBar = function (skillId, numOfCircle, num, timeForLoad) {
   } else {
    counter = counter + 1;
    numElement.innerHTML = counter + "%";
-   console.log(numElement);
   }
  }, timeForLoad);
 };
