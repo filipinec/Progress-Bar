@@ -1,6 +1,8 @@
 :root {
- --change: 0;
+ --changeCSS: 0;
+ --changeHTML: 0;
 }
+
 * {
  margin: 0;
  padding: 0;
@@ -17,21 +19,23 @@ body {
  font-weight: 600;
  color: #555;
 }
+
 .skill {
+ margin: 20px; /* Add some margin between skills */
  width: 160px;
  height: 160px;
- /* background: cornflowerblue; */
  position: relative;
 }
+
 .outer {
  height: 160px;
  width: 160px;
  border-radius: 50%;
- /* border: 1px solid red; */
  padding: 20px;
  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
   6px 6px 10px -1px rgba(255, 255, 255, 0.7);
 }
+
 .inner {
  height: 120px;
  width: 120px;
@@ -51,18 +55,36 @@ body {
  stroke-width: 20px;
  stroke-dasharray: 436;
  stroke-dashoffset: 436;
- animation: anim 2s linear forwards;
+ animation: animHTML 2s linear forwards;
 }
+
 .html-block svg {
  position: absolute;
  top: 0;
  left: 0;
 }
-@keyframes anim {
- /* 0% {
-  stroke-dashoffset: 0;
- } */
+.css-block circle {
+ fill: none;
+ stroke: url(#GradientColor);
+ stroke-width: 20px;
+ stroke-dasharray: 436;
+ stroke-dashoffset: 436;
+ animation: animCSS 2s linear forwards;
+}
+.css-block svg {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+
+@keyframes animHTML {
  100% {
-  stroke-dashoffset: var(--change);
+  stroke-dashoffset: var(--changeHTML);
+ }
+}
+
+@keyframes animCSS {
+ 100% {
+  stroke-dashoffset: var(--changeCSS);
  }
 }

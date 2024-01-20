@@ -3,60 +3,56 @@
  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Progress Bar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Your Page Title</title>
  </head>
  <body>
-  <!-- HTML Block -->
-  <div class="html-block">
-   <div class="skill">
-    <div class="outer">
-     <div class="inner">
-      <div id="number-1">50</div>
-     </div>
+  <div class="skill" id="skill-1">
+   <div class="outer">
+    <div class="inner" id="number-1">0%</div>
+    <div class="html-block">
+     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="160px"
+      height="160px"
+     >
+      <defs>
+       <linearGradient id="GradientColor">
+        <stop offset="0%" stop-color="#ffcb03" />
+        <stop offset="100%" stop-color="#f17c1e" />
+       </linearGradient>
+      </defs>
+      <circle cx="80" cy="80" r="70"></circle>
+     </svg>
     </div>
-    <svg
-     xmlns="http://www.w3.org/2000/svg"
-     version="1.1"
-     width="160px"
-     height="160px"
-    >
-     <defs>
-      <linearGradient id="GradientColor">
-       <stop offset="0%" stop-color="#ffcb03" />
-       <stop offset="100%" stop-color="#f17c1e" />
-      </linearGradient>
-     </defs>
-     <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-    </svg>
    </div>
   </div>
 
-  <!-- CSS Block -->
-  <!-- <div class="html-block">
-   <div class="skill">
-    <div class="outer">
-     <div class="inner">
-      <div id="number-2">50</div>
-     </div>
+  <div class="skill" id="skill-2">
+   <div class="outer">
+    <div class="inner" id="number-2">0%</div>
+    <div class="css-block">
+     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      width="160px"
+      height="160px"
+     >
+      <defs>
+       <linearGradient id="GradientColor">
+        <stop offset="0%" stop-color="#ffcb03" />
+        <stop offset="100%" stop-color="#f17c1e" />
+       </linearGradient>
+      </defs>
+      <circle cx="80" cy="80" r="70"></circle>
+     </svg>
     </div>
-    <svg
-     xmlns="http://www.w3.org/2000/svg"
-     version="1.1"
-     width="160px"
-     height="160px"
-    >
-     <defs>
-      <linearGradient id="GradientColor">
-       <stop offset="0%" stop-color="#ffcb03" />
-       <stop offset="100%" stop-color="#f17c1e" />
-      </linearGradient>
-     </defs>
-     <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-    </svg>
    </div>
-  </div> -->
- </body>
+  </div>
 
- <script src="script.js"></script>
+  <!-- Add more skill elements as needed -->
+
+  <script src="script.js"></script>
+ </body>
 </html>
