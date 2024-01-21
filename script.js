@@ -5,11 +5,8 @@ const data = {
  react: 10,
 };
 
-const x = function (percent) {};
-
 const progressBar = function (skillId, numOfCircle, num, timeForLoad) {
  let numElement = document.querySelector(`#${skillId} .inner`);
- console.log(numElement);
  let root = document.documentElement;
  let counter = 0;
  let intervalId;
@@ -29,3 +26,5 @@ const progressBar = function (skillId, numOfCircle, num, timeForLoad) {
 
 progressBar("skill-1", 0, 50, 40);
 progressBar("skill-2", 0, 75, 27);
+
+x();
