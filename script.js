@@ -1,17 +1,10 @@
-const data = {
- html: 75,
- css: 75,
- javaScript: 50,
- react: 10,
-};
-
 const progressBar = function (skillId, numOfCircle, num, timeForLoad) {
  let numElement = document.querySelector(`#${skillId} .inner`);
  let root = document.documentElement;
  let counter = 0;
  let intervalId;
 
- root.style.setProperty("--changeHTML", numOfCircle + 216);
+ root.style.setProperty("--changeHTML", numOfCircle + 219);
  root.style.setProperty("--changeCSS", numOfCircle + 106);
 
  intervalId = setInterval(() => {
@@ -26,5 +19,3 @@ const progressBar = function (skillId, numOfCircle, num, timeForLoad) {
 
 progressBar("skill-1", 0, 50, 40);
 progressBar("skill-2", 0, 75, 27);
-
-x();
